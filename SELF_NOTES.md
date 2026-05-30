@@ -7,6 +7,9 @@
 - UIView<TVm> паттерн, понимаю зачем Initialize(TVm vm) вместо передачи VM в конструктор.
 - CompositeDisposable из UniRx, AddTo(_subscriptions) добавляет подписку в список, _subscriptions.Dispose() разрывает все разом.
 
+Какие места в коде придумал сам, без AI:
+Базовый IService и GameLifetimeScope с EnergyBarUIViewModel. Дальше просил достроить архитектуру и связи. Я много правил за AI(это будет в другом доке), поэтому не совсем могу оценить записывать ли это в свои идеи.
+
 Что осталось «магией»:
 - Детали как VContainer резолвит IAsyncStartable, знаю что вызывает StartAsync после сборки контейнера, но конкретный PlayerLoop-хук не смотрел.
 - Внутренности UniTask.Yield(PlayerLoopTiming.Update), знаю что это suspension до следующего Update, но точный механизм регистрации в PlayerLoop не отслеживал.
