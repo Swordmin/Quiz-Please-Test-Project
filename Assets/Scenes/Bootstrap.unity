@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 308379367}
   - component: {fileID: 308379368}
   m_Layer: 0
-  m_Name: SceneInstaller
+  m_Name: SceneBootstrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
